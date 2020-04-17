@@ -391,7 +391,7 @@ h4,.h4 {
     }
 
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link,.header_area.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link {
-    color: #3b1d82;
+    color: #00405f;
     }
 
 @media (min-width: 992px) {
@@ -508,7 +508,7 @@ h4,.h4 {
     }
 
 .header_area .navbar .nav-item.active .nav-link {
-    color: #3b1d82 !important
+    color: #00405f;
     }
 
 .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
