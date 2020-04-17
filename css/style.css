@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,600");
+
+:root{
+  --grayish-color: #d6dce0;
+  --header-inactive-color: #fbbb39;
+  --location-header-color: #86b3c6;
+  --title-color: #0c4274;
+  --body-color: #212126;
+}
 body {
-    color: #797979;
+    color: var(--body-color); /*marker*/
     font-family: "Poppins",sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -29,7 +37,7 @@ button:focus {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Poppins",sans-serif;
-    color: #242424;
+    color: var(--location-header-color); /*marker*/
     line-height: 1.5
     }
 
@@ -58,7 +66,7 @@ h4,.h4 {
     }
 
 .primary-text {
-    color: #3b1d82
+    color: var(--title-color); /*marker*/
     }
 
 .primary-text2 {
@@ -252,7 +260,7 @@ h4,.h4 {
 
 .header_area .navbar .nav .nav-item .nav-link {
     font-family: "Poppins",sans-serif;
-    color: #66CDAA;
+    color: var(--header-inactive-color); /*marker*/
     text-transform: capitalize;
     font-weight: 400;
     padding: 33px 0;
@@ -264,7 +272,7 @@ h4,.h4 {
     }
 
 .header_area .navbar .nav .nav-item:hover .nav-link,.header_area .navbar .nav .nav-item.active .nav-link {
-    color: #9370DB;
+    color: var(--title-color);
     opacity: 1;
     }
 
@@ -327,7 +335,7 @@ h4,.h4 {
 
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
     line-height: 45px;
-    color: #3b1d82 !important;
+    color: var(--title-color) !important; /*marker*/
     padding: 0px 30px;
     transition: all 150ms linear;
     display: block;
@@ -391,7 +399,7 @@ h4,.h4 {
     }
 
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link,.header_area.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link {
-    color: #3b1d82;
+    color: var(--title-color);
     }
 
 @media (min-width: 992px) {
@@ -508,7 +516,7 @@ h4,.h4 {
     }
 
 .header_area .navbar .nav-item.active .nav-link {
-    color: #3b1d82 !important
+    color: var(--title-color);
     }
 
 .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
@@ -870,8 +878,8 @@ h4,.h4 {
 .hero-banner {
     position: relative;
     padding: 70px 0;
-    background: url("../img/banner/background.jpg") center no-repeat;
     background-size: cover;
+    background: var(--grayish-color);
     }
 
 @media (min-width: 768px) {
@@ -924,7 +932,7 @@ h4,.h4 {
     color: #fff;
     margin-bottom: 0
     font-weight: 200;
-    color: #3b1d82
+    color: var(--title-color);
     }
 
 @media (min-width: 768px) {
@@ -940,6 +948,7 @@ h4,.h4 {
     color: #fff;
     margin-bottom: 0
     font-weight: bold;
+
     }
 
 .hero-banner-icon {
@@ -2142,7 +2151,8 @@ h4,.h4 {
     }
 
 .contact-info .media-body p {
-    color: #999999
+    color: #999999;
+    font-size: 14px;
     }
 
 .contact-title {
