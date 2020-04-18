@@ -9,9 +9,4 @@ TODO:
 - link by region
 - figure out flexboxes
 
-todo (josh):
-- discover the meaning of life
-- rickroll more people (https://bit.ly/AK16b2i0)
-- find soul mate (not happening)
-
 https://bit.ly/2VqkhS4
