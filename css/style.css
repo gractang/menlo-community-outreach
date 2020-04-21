@@ -239,7 +239,7 @@ h4,.h4 {
     }
 
 .header_area .navbar {
-    background: transparent;
+    background: transparent);
     border: 0px;
     border-radius: 0px;
     width: 100%;
@@ -3257,6 +3257,13 @@ h4,.h4 {
     -o-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s
     }
+.center {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 @media (max-width: 767px) {
     .button {
