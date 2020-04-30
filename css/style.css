@@ -3605,3 +3605,40 @@ h4,.h4 {
 .footer-text a,.footer-text i{
    color: #66CDAA;
 }
+
+.buttoncollapsible {
+  background-color: #eee;
+  color: var(--title-color);
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+
+
+.buttonactive, .buttoncollapsible:hover {
+  background-color: #ccc;
+}
+
+
+.content {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.buttoncollapsible:after {
+  content: '\02795'; /* Unicode character for "plus" */
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin-right: 5px;
+}
+
+.buttonactive:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
