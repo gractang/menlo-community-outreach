@@ -27,6 +27,10 @@ a:link {
     color: var(--location-header-color);
 }
 
+a:hover {
+    text-decoration:none
+}
+
 button {
     cursor: pointer
     }
