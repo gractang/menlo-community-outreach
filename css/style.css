@@ -3303,11 +3303,15 @@ h5, .h5 {
 @media (max-width: 767px) {
     .button {
     font-size: 13px;
-    padding: 9px 24px
+    padding: 9px 24px;
     }
 
 
-    }
+}
+
+.button:link {
+    color:#fff
+}
 
 .button:hover {
     background: var(--link-hover-color);
