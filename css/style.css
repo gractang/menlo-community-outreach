@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,600");
 
 :root{
-  --grayish-color: #d6dce0;
-  --header-inactive-color: #fbbb39;
-  --location-header-color: #86b3c6;
-  --title-color: #0c4274;
-  --body-color: #212126;
+  --header-active-color: #DA7050;
+  --header-inactive-color: #EFBF90;
+  --location-header-color: #AACDB3;
+  --link-hover-color: #efbf90;
+  --title-color: #DA7050;
+  --body-color: #424242;
+  --section-fill-color: #DA7050;
 }
 body {
     color: var(--body-color); /*marker*/
@@ -21,10 +23,9 @@ ul {
     padding: 0
     }
 
-
-a:hover {
-    text-decoration: none
-    }
+a:link {
+    color: var(--location-header-color);
+}
 
 button {
     cursor: pointer
@@ -66,16 +67,24 @@ h4,.h4 {
     font-size: 20px
     }
 
+h5, .h5 {
+    font-size: 15px
+}
+
 [class^="flaticon-"]:before,[class*=" flaticon-"]:before,[class^="flaticon-"]:after,[class*=" flaticon-"]:after {
     margin: 0
     }
-
+  
 .primary-text {
     color: var(--title-color); /*marker*/
     }
 
-.primary-text2 {
-    color: #66CDAA;
+.primary-text2 h5 {
+    color: var(--inactive-header-color); /*marker*/
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6
     }
 
 .primary-bg {
@@ -85,6 +94,19 @@ h4,.h4 {
 .bg-gray {
     background: #f7f7f7
     }
+
+.primary-text h3 span::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #3CC78F;
+        height: 10px;
+        width: 100%;
+        content: '';
+        opacity: .5;
+        bottom: 7px;
+        z-index: -1;
+ }
 
 .section-padding--small {
     padding: 50px 0
@@ -277,7 +299,7 @@ h4,.h4 {
     }
 
 .header_area .navbar .nav .nav-item:hover .nav-link,.header_area .navbar .nav .nav-item.active .nav-link {
-    color: var(--title-color);
+    color: var(--header-active-color);
     opacity: 1;
     }
 
@@ -291,7 +313,7 @@ h4,.h4 {
     border-radius: 0px;
     box-shadow: none;
     margin: 0px;
-    background: #fff
+    background: #DA7050
     }
 
 @media (min-width: 992px) {
@@ -340,7 +362,7 @@ h4,.h4 {
 
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
     line-height: 45px;
-    color: var(--title-color) !important; /*marker*/
+    color: var(--header-active-color) !important; /*marker*/
     padding: 0px 30px;
     transition: all 150ms linear;
     display: block;
@@ -404,7 +426,7 @@ h4,.h4 {
     }
 
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link,.header_area.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link {
-    color: var(--title-color);
+    color: var(--header-active-color);
     }
 
 @media (min-width: 992px) {
@@ -517,7 +539,7 @@ h4,.h4 {
     }
 
 .header_area .navbar {
-    background: #fff
+    background: #DA7050
     }
 
 .header_area .navbar .nav-item.active .nav-link {
@@ -743,6 +765,10 @@ h4,.h4 {
     text-align: center;
     margin-top: 15px
     }
+
+.footer-bottom p {
+    color: var(--body-color)
+}
 
 .made_life_inner .nav.nav-tabs li {
     flex: 0 0 50%;
@@ -3251,7 +3277,7 @@ h4,.h4 {
     border-radius: 4px;
     color: #fff;
     border: 1px solid #fff;
-    background: var(--title-color);
+    background: var(--header-active-color);
     -webkit-transition: all 0.7s ease 0s;
     -moz-transition: all 0.7s ease 0s;
     -o-transition: all 0.7s ease 0s;
@@ -3275,7 +3301,7 @@ h4,.h4 {
     }
 
 .button:hover {
-    background: var(--location-header-color);
+    background: var(--header-inactive-color);
     color: #fff /*inner hover text*/
     }
 
@@ -3315,7 +3341,7 @@ h4,.h4 {
     }
 
 .footer-area {
-    background: #111429;
+    background: var(--section-fill-color);
     padding-top: 60px
     }
 
@@ -3404,11 +3430,11 @@ h4,.h4 {
     color: #3b1d82
     }
 
-.footer-area h6 {
+.footer-area h5 {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700
     }
 
@@ -3470,6 +3496,7 @@ h4,.h4 {
     }
 
 .single-footer-widget {
+    text-align: center;
     color: #fff
     }
 
@@ -3571,7 +3598,7 @@ h4,.h4 {
     }
 
 .single-footer-widget p {
-    color: #666
+    color: var(--header-inactive-color)
     }
 
 .single-footer-widget ul li {
