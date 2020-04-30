@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,600");
 
 :root{
-  --grayish-color: #d6dce0;
-  --header-inactive-color: #fbbb39;
-  --location-header-color: #86b3c6;
-  --title-color: #0c4274;
-  --body-color: #212126;
+  --grayish-color: #DA7050;
+  --header-inactive-color: #EFBF90;
+  --location-header-color: #AACDB3;
+  --title-color: #DA7050;
+  --body-color: #DA7050;
 }
 body {
     color: var(--body-color); /*marker*/
@@ -71,7 +71,7 @@ h4,.h4 {
     }
 
 .primary-text {
-    color: var(--title-color); /*marker*/
+    color: var(--header-inactive-color); /*marker*/
     }
 
 .primary-text2 {
@@ -291,7 +291,7 @@ h4,.h4 {
     border-radius: 0px;
     box-shadow: none;
     margin: 0px;
-    background: #fff
+    background: #DA7050
     }
 
 @media (min-width: 992px) {
@@ -517,7 +517,7 @@ h4,.h4 {
     }
 
 .header_area .navbar {
-    background: #fff
+    background: #DA7050
     }
 
 .header_area .navbar .nav-item.active .nav-link {
