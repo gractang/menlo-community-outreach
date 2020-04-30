@@ -883,8 +883,8 @@ h4,.h4 {
 .hero-banner {
     position: relative;
     padding: 70px 0;
+    background: url("../img/background.jpg") center no-repeat;
     background-size: cover;
-    background: var(--grayish-color);
     }
 
 @media (min-width: 768px) {
@@ -937,7 +937,7 @@ h4,.h4 {
     color: #fff;
     margin-bottom: 0
     font-weight: 200;
-    color: var(--title-color);
+    color: #a1cdb0;
     }
 
 @media (min-width: 768px) {
