@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,600");
 
 :root{
-  --header-active-color: #DA7050;
-  --header-inactive-color: #EFBF90;
+  --header-active-color: #e86946;
+  --header-inactive-color: #f7bd88;
   --location-header-color: #AACDB3;
-  --link-hover-color: #efbf90;
-  --title-color: #DA7050;
+  --link-hover-color: #f7bd88;
+  --title-color: #e86946;
   --body-color: #424242;
-  --section-fill-color: #DA7050;
+  --section-fill-color: #e86946;
+  --default-button-color: #e86946;
+  --ex-orange: #DA7050;
+  --ex-light-orange: #efbf90;
+
 }
 body {
     color: var(--body-color); /*marker*/
@@ -317,7 +321,7 @@ h5, .h5 {
     border-radius: 0px;
     box-shadow: none;
     margin: 0px;
-    background: #DA7050
+    background: var(--section-fill-color) /*what*/
     }
 
 @media (min-width: 992px) {
@@ -543,7 +547,8 @@ h5, .h5 {
     }
 
 .header_area .navbar {
-    background: #DA7050
+    color: #fff /*marker*/
+    /*can put background color here*/
     }
 
 .header_area .navbar .nav-item.active .nav-link {
@@ -570,11 +575,11 @@ h5, .h5 {
     position: relative
     }
 
-.navbar-toggler span {
+.navbar-toggler span { /*hamburger*/
     display: block;
     width: 25px;
     height: 3px;
-    background: #eb0162;
+    background: var(--section-fill-color);
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -3278,15 +3283,15 @@ h5, .h5 {
     font-size: 17px;
     font-weight: bold;
     padding: 12px 54px;
-    border-radius: 4px;
+    border-radius: 5px;
     color: #fff;
-    border: 1px solid #fff;
-    background: var(--header-active-color);
+    background: var(--default-button-color);
     -webkit-transition: all 0.7s ease 0s;
     -moz-transition: all 0.7s ease 0s;
     -o-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s
-    }
+}
+
 .center {
   margin: 0;
   position: relative;
@@ -3305,7 +3310,7 @@ h5, .h5 {
     }
 
 .button:hover {
-    background: var(--header-inactive-color);
+    background: var(--link-hover-color);
     color: #fff /*inner hover text*/
     }
 
