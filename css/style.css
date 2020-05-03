@@ -4,7 +4,8 @@
   --header-active-color: #e86946;
   --header-inactive-color: #f7bd88;
   --location-header-color: #AACDB3;
-  --link-hover-color: #f7bd88;
+  --link-hover-color: #519776;
+  --button-hover-color: #f7bd88;
   --title-color: #e86946;
   --body-color: #424242;
   --section-fill-color: #e86946;
@@ -32,6 +33,11 @@ a:link {
 }
 
 a:hover {
+    text-decoration:none;
+    color:var(--link-hover-color)
+}
+
+a:visited {
     text-decoration:none
 }
 
@@ -3314,7 +3320,7 @@ h5, .h5 {
 }
 
 .button:hover {
-    background: var(--link-hover-color);
+    background: var(--button-hover-color);
     color: #fff /*inner hover text*/
     }
 
