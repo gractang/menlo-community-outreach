@@ -3,16 +3,14 @@
 :root{
   --header-active-color: #e86946;
   --header-inactive-color: #f7bd88;
-  --location-header-color: #AACDB3;
+  --link-color: #AACDB3;
   --link-hover-color: #519776;
   --button-hover-color: #f7bd88;
   --title-color: #e86946;
+  --title-two-color: #aacdb3;
   --body-color: #424242;
   --section-fill-color: #e86946;
   --default-button-color: #e86946;
-  --ex-orange: #DA7050;
-  --ex-light-orange: #efbf90;
-
 }
 body {
     color: var(--body-color); /*marker*/
@@ -29,7 +27,7 @@ ul {
     }
 
 a:link {
-    color: var(--location-header-color);
+    color: var(--link-color);
 }
 
 a:hover {
@@ -52,13 +50,12 @@ button:focus {
 
 h1,h2,h3 {
     font-family: "Poppins",sans-serif;
-    color: var(--location-header-color); /*marker*/
+    color: var(--title-two-color); /*marker*/
     line-height: 1.5
     }
 
 h4,h5,h6 {
     font-family: "Poppins",sans-serif;
-    color: var(--location-title-color); /*marker*/
     line-height: 1.5
     }
 
@@ -68,13 +65,13 @@ h1,.h1 {
     }
 
 h2,.h2 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600
     }
 
 h3,.h3 {
     font-size: 25px;
-    font-weight: 500
+    font-weight: 500;
     }
 
 h4,.h4 {
