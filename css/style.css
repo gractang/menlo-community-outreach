@@ -3617,6 +3617,9 @@ h5, .h5 {
     color: var(--header-inactive-color)
     }
 
+.single-footer-widget a:hover {
+    color: #81ba94
+}    
 .single-footer-widget ul li {
     margin-bottom: 10px
     }
@@ -3646,7 +3649,7 @@ h5, .h5 {
 }
 
 .footer-text a,.footer-text i{
-   color: #66CDAA;
+   color: var(--body-color);
 }
 
 .buttoncollapsible {
