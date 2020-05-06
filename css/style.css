@@ -3710,4 +3710,20 @@ h5, .h5 {
 .donation-padding {
     padding-left: 10vw;
 }
+.home-image{
+    width:25vw;
+    height:auto;
+    padding-left:5vw;
+    padding-top:4vh;
+}
+.home-wrapper{
+    padding-left:5vw;
+}
+.links-wrapper{
+    padding-left:5vw;
+}
+.primary-text-home {
+    color: var(--title-color); /*marker*/
+    padding-left:5vw;
+}
 
