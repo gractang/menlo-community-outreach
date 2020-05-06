@@ -3688,3 +3688,27 @@ h5, .h5 {
 .buttonactive:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+.donate-page{
+    display:flex;
+    justify-content:space-around;
+    width:100vw;
+    align-items:center;
+    flex-direction:row;
+    background-color: #ffffff;
+    padding-bottom:15vh; 
+    padding-top:15vh;
+}
+.donation-image{
+    width:35vw;
+    height:auto;
+    margin-right:15vw;
+}
+.donation-links{
+    width:25vw;
+}
+.donation-padding{
+    padding-left: 10vw;
+
+}
+
