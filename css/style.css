@@ -3689,7 +3689,7 @@ h5, .h5 {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-.donate-page{
+.donate-page {
     display:flex;
     justify-content:space-around;
     width:100vw;
@@ -3699,16 +3699,15 @@ h5, .h5 {
     padding-bottom:15vh; 
     padding-top:15vh;
 }
-.donation-image{
+.donation-image {
     width:35vw;
     height:auto;
     margin-right:15vw;
 }
-.donation-links{
+.donation-links {
     width:25vw;
 }
-.donation-padding{
+.donation-padding {
     padding-left: 10vw;
-
 }
 
